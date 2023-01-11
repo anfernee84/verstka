@@ -17,7 +17,7 @@
 }
 body {
   /* margin: 0; */
-  background-color:#fff;
+  background-color: #fff;
   font-family: 'Comfortaa';
   /* color: var(--primary-black-color); */
 }
@@ -37,7 +37,6 @@ ol,
 .list {
   list-style-type: none;
 }
-
 
 .site-nav a:hover,
 .site-nav a:focus {
@@ -59,12 +58,29 @@ ol,
 
 .section-title {
   color: var(--secondary-black-color);
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .hero-title {
-  color: red;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: block;
+  color: #ffffff;
+  padding: 200px 452px 280p 452px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+}
+.hero {
+  margin-top: 0px;
+  margin-bottom: 30px;
+  width: 1600px;
+  height: 600px;
   text-align: center;
+  background: #2f303a;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Features */
 
@@ -72,6 +88,17 @@ ol,
   color: var(--primary-black-color);
 }
 
+.our-strength h2,
+p,
+section .our-team,
+.title,
+h2,
+h3,
+img,
+figure {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 /* .communication-nav .link {
   color: #757575;
 } */
@@ -83,8 +110,7 @@ ol,
 
 .our-team .description {
   color: #757575;
-}f
-
+}
 .hero-button {
   color: black;
 }
@@ -93,10 +119,9 @@ ol,
 .button:focus {
   color: #f5f5f5;
   background-color: #2196f3;
-  
 }
 
-.button{
+.button {
   font-weight: 400;
   font-size: 15px;
   min-width: 200px;
@@ -106,27 +131,23 @@ ol,
   padding: 10px 20px 10px 20px;
   display: inline-block;
   text-align: center;
-  border: 2px transparent
+  border: 2px transparent;
 }
 
-
-.button.primary{
+.button.primary {
   /* position: absolute; */
-  
+
   /* height: 1.5rem; */
-  
+
   /* left: 711.25px; */
   /* top: 430px; */
-  background-color: #2196F3;
+  background-color: #2196f3;
   /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-  
+
   color: #fff;
 
   /* vertical-align: middle; */
-  
 }
-
-
 
 .portfolio-link,
 .site-nav {
@@ -146,7 +167,6 @@ ol,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -158,4 +178,18 @@ ol,
 
 .page-header {
   background-color: #fff;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
