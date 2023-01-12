@@ -65,14 +65,17 @@ ol,
 .hero-title {
   display: block;
   color: #ffffff;
-  padding: 200px 452px 280p 452px;
+  /* padding: 200px 452px 280p 452px; */
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 .hero {
+  padding-top: 200px;
   margin-top: 0px;
   margin-bottom: 30px;
   width: 1600px;
