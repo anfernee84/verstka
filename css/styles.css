@@ -34,10 +34,24 @@ body {
 /* site-nav */
 ul,
 ol,
+li,
 .list {
   list-style-type: none;
 }
+a {
+  text-decoration:none;
+}
+.site-nav {
+  line-height: 1.6;
+  cursor: pointer;
+  display: flex;
+}
 
+.site-nav a{
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 .site-nav a:hover,
 .site-nav a:focus {
   color: #2196f3;
@@ -51,6 +65,21 @@ ol,
   color: #2196f3;
 }
 
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+.main-nav{
+  display: inline-flex;
+  flex-direction:row;
+  align-items: center;
+
+
+}
+
+.logo{
+  margin-bottom: 10px;
+}
 .logo-first:hover,
 .logo-second:hover {
   color: green;
@@ -105,7 +134,14 @@ figure {
 /* .communication-nav .link {
   color: #757575;
 } */
+.communication-nav .button{
+  margin-top: 3px;
+}
 
+.list{
+  display: flex;
+
+}
 .our-team .title {
   color: var(--primary-black-color);
   font-weight: 700;
@@ -138,26 +174,11 @@ figure {
 }
 
 .button.primary {
-  /* position: absolute; */
-
-  /* height: 1.5rem; */
-
-  /* left: 711.25px; */
-  /* top: 430px; */
   background-color: #2196f3;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-
   color: #fff;
-
-  /* vertical-align: middle; */
 }
 
 .portfolio-link,
-.site-nav {
-  line-height: 1.6;
-  cursor: pointer;
-}
-
 .portfolio-link-button:hover,
 .portfolio-link-button:focus {
   background-color: #2196f3;
@@ -170,17 +191,12 @@ figure {
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  /* height: 100px; */
-  /* background-color: tomato; */
-  outline: 2px solid tomato;
-  width: 1200px;
-}
+
 
 .page-header {
   background-color: #fff;
+
+
 }
 
 ul {
@@ -195,4 +211,15 @@ figure {
   margin-inline-end: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid tomato;
+  width: 1200px;
+  display: flex;
+
 }
