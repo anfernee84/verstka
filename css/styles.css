@@ -105,7 +105,7 @@ a {
 .hero {
   padding-top: 200px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 90px;
   width: 1600px;
   height: 600px;
   text-align: center;
@@ -126,7 +126,7 @@ section .our-team,
 h2,
 h3,
 img,
-figure {
+figure,ul,li {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -233,4 +233,31 @@ figure {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 100px;
+}
+
+.section-title{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.what-we-can{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 190px;
+}
+.what-we-can .imgitem:not(:last-child){
+  margin-right: 30px;
+}
+.headsign{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.our-team{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.our-team .team:not(:last-child){
+  margin-right: 30px;
 }
