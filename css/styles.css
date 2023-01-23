@@ -284,7 +284,7 @@ figure {
   width: 1600px;
   height: 250px;
   color: #2f303a;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -325,4 +325,10 @@ figure {
 .description h3 {
   margin-top: 30px;
   margin-bottom: 15px;
+}
+
+.buttons{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
