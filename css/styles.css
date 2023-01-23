@@ -182,12 +182,16 @@ li {
   background-color: #2196f3;
   color: #fff;
 }
+.portfolio-link-button{
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
 
 .portfolio-link,
-.portfolio-link-button:hover,
-.portfolio-link-button:focus {
+.portfolio-link-button:hover{
   background-color: #2196f3;
   color: #f5f5f5;
+
 }
 
 .section .title,
@@ -195,9 +199,14 @@ li {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 .page-header {
   background-color: #fff;
+  margin-top: 30px;
 }
 
 ul {
@@ -237,10 +246,7 @@ figure {
   margin-bottom: 100px;
 }
 
-.section-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
+
 
 .what-we-can {
   display: flex;
@@ -329,6 +335,27 @@ figure {
 
 .buttons{
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+
+}
+.buttons-section{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons .btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.projects-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.projects-list > .project {
+  flex: 1 1 30%; /*grow | shrink | basis */
+
 }
