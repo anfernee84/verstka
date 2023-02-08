@@ -138,14 +138,41 @@ li {
 /* .communication-nav .link {
   color: #757575;
 } */
-.communication-nav .button {
-  margin-top: 3px;
-}
 
 .communication-nav {
   display: flex;
   margin-left: auto;
 }
+.communication-nav .button {
+  margin-top: 3px;
+  display: inline-flex;
+  align-items:center;
+
+
+}
+.communication-nav .button.mail::before{
+  content: "";
+  background-image: url(../img/envelope.png);
+  width: 20px;
+  height: 20px;
+  /* display: flex;  */
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.communication-nav .button.phone::before{
+  content: "";
+  background-image: url(../img/smartphone.svg);
+  width: 20px;
+  height: 20px;
+  /* display: flex;  */
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+
 .our-team .title {
   color: var(--primary-black-color);
   font-weight: 700;
@@ -237,6 +264,24 @@ figure {
 .our-strength {
   display: flex;
 }
+
+
+.list-item{
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.list-item::before{
+display: block;
+content: "";
+height: 70px;
+background-image: url(../img/antenna.png);
+background-repeat: no-repeat;
+background-size: contain;
+background-position: center;
+}
+
 
 .section-abilities {
   width: 1170px;
