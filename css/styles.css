@@ -243,6 +243,18 @@ ul {
   padding-inline-start: 0px;
 }
 
+.teamcard {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
 figure {
   display: block;
   margin-block-start: 1em;
@@ -251,6 +263,8 @@ figure {
   margin-inline-end: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
+  /* box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3); */
+  border-radius: 10px;
 }
 
 .container {
@@ -262,27 +276,49 @@ figure {
 }
 
 .our-strength {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
+  
 }
 
 
 .list-item{
-  margin: 10px;
+  /* margin: 10px; */
   padding: 10px;
 }
-
-
-.list-item::before{
-display: block;
-content: "";
-height: 70px;
-background-image: url(../img/antenna.png);
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
+.feature-title{
+  white-space: nowrap;
 }
 
+.details::before{
+  background-image: url(../img/antenna.png);
+  }
 
+.planning::before{
+  background-image: url(../img/diagram.png);
+  }
+
+.features::before{
+  background-image: url(../img/astronaut.png);
+  } 
+
+.preciseness::before{
+  background-image: url(../img/clock.png);
+
+}
+
+.list-item::before{
+  margin-bottom: 25px;
+  display: block;
+  content: "";
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  } 
+  
+
+  
 .section-abilities {
   width: 1170px;
   height: 101px;
@@ -291,7 +327,7 @@ background-position: center;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 
@@ -299,7 +335,7 @@ background-position: center;
 .what-we-can {
   display: flex;
   justify-content: center;
-  margin-bottom: 190px;
+  margin-bottom: 100px;
 }
 .what-we-can .imgitem:not(:last-child) {
   margin-right: 30px;
@@ -318,6 +354,7 @@ background-position: center;
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 
 .our-team {
@@ -370,7 +407,8 @@ background-position: center;
 }
 
 .our-team img {
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .description {
   text-align: center;
@@ -423,4 +461,106 @@ background-position: center;
 
 .project{
   background: #EEEEEE;
+}
+
+.links{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  /* outline: 1px solid black; */
+}
+
+.social-button{
+  border: none;
+  border-radius: 20%;
+  background-color: transparent;
+  }
+
+.button-icon{
+  width: 44px;
+  height: 44px;
+  fill:#757575;
+  padding: 10px 10px 10px 10px;
+}
+
+.button-icon:hover{
+  fill:white;
+  background-color: #2196f3;
+  border-radius: 20%;
+
+}
+.description{
+  text-align: center;
+}
+
+.footer-social{
+  position: absolute;
+  left: 650px;
+  margin-top: 75px;
+}
+
+
+.footer-button{
+  border: none;
+  /* border-radius: 20%; */
+  background-color: transparent;
+
+  }
+
+  .footer-button-icon{
+    width: 60px;
+    height: 60px;
+    fill:#757575;
+    padding: 10px;
+    /* background-color: #757575; */
+    /* border-radius: 20%; */
+    
+  }
+  
+  .footer-button-icon:hover{
+    fill:white;
+    background-color: #2196f3;
+    border-radius: 20%;
+  }
+  
+.our-clients{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+}
+
+.clients-links{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+}
+
+.client-button{
+  /* border: none; */
+  border-radius: 3%;
+  background-color: transparent;
+
+    }
+
+
+.clients-links .client:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-icon{
+  width: 170px;
+  height: 92px;
+  fill:#757575;
+  padding: 10px 10px 10px 10px;
+}
+
+.client-icon:hover{
+  fill:white;
+  background-color: #2196f3;
+  border-radius: 3%;
+
 }
